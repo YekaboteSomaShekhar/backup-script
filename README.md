@@ -14,7 +14,7 @@ The **Automatic Backup System** is a Bash script designed to create automatic ba
 **Clone or create the project folder:**
 
 ```mkdir backup system
-
+```
 ### Objectives
 - Automate the file backup process using Bash scripting.  
 - Organize backups by date and time.  
