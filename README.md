@@ -50,6 +50,16 @@ chmod +x backup.sh
 [2025-11-22 08:10:12] INFO: Starting backup of /mnt/c/Users/lenovo/OneDrive/Documents/myfiles
 [2025-11-22 08:10:15] SUCCESS: Backup created and verified: backup-2025-11-22-0810.tar.gz
 ```
+
+### All Command Options Explained
+
+| Command                                   | Description                                         |
+| ----------------------------------------- | --------------------------------------------------- |
+| `./backup.sh <folder>`                    | Creates a backup of the specified folder            |
+| `./backup.sh --dry-run <folder>`          | Simulates backup without creating/deleting anything |
+| (future) `--restore <file> --to <folder>` | Restores a backup (if implemented)                  |
+| (future) `--list`                         | Lists all backups with sizes and timestamps         |
+
 ### How It Works
 
 **Backup Rotation Algorithm**
