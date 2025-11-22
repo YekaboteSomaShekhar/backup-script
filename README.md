@@ -145,6 +145,10 @@ echo "This is my backup automation task" > myfiles/test2.txt
 [2025-11-22 10:09:22] INFO: Starting backup of /mnt/c/Users/lenovo/OneDrive/Documents/myfiles
 [2025-11-22 10:09:22] SUCCESS: Backup created and verified: /mnt/c/Users/lenovo/OneDrive/Documents/backups/backup-2025-11-22-1009.tar.gz
 ```
+
+<img width="1400" height="928" alt="Screenshot 2025-11-22 160916" src="https://github.com/user-attachments/assets/190377de-0576-4900-bd2d-a27963638f04" />
+<img width="1375" height="923" alt="Screenshot 2025-11-22 161241" src="https://github.com/user-attachments/assets/c011836a-9011-4395-96d8-9efd22921bb7" />
+
 **Restoring a Backup:**
 
 ```
