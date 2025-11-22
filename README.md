@@ -26,6 +26,7 @@ mkdir backup system
    
 + `backup.sh` → main script
 + `backup.config` → configuration file
++ `backup.log`→ log file
 + `README.md` → documentation
 
 4. **Make the script executable:**
@@ -35,11 +36,20 @@ chmod +x backup.sh
 ./backup.sh
 ```
 
-### Objectives
-- Automate the file backup process using Bash scripting.  
-- Organize backups by date and time.  
-- Maintain a detailed log file for every backup.  
-- Optionally remove old backups to save storage space.
+**Basic Usage Examples**
+- Create a new backup
+```
+./backup.sh /mnt/c/Users/lenovo/OneDrive/Documents/myfiles
+```
+- Dry-run mode
+```
+./backup.sh --dry-run /mnt/c/Users/lenovo/OneDrive/Documents/myfiles
+```
+- Example Output:
+```
+[2025-11-22 08:10:12] INFO: Starting backup of /mnt/c/Users/lenovo/OneDrive/Documents/myfiles
+[2025-11-22 08:10:15] SUCCESS: Backup created and verified: backup-2025-11-22-0810.tar.gz
+```
 
 ### Features
 1. Automatically copies files from the source folder to the backup folder.  
