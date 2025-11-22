@@ -12,6 +12,7 @@ The **Automatic Backup System** is a Bash script designed to create automatic ba
 ### How to Use It?
 #### Installation Steps:
 1. **Install Windows Subsystem for Linux(WSL) if you’re using Windows:**
+- Go to cmd or windows powershell and type:
 
 ```
 wsl --install
