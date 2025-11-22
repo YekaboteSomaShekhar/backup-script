@@ -112,9 +112,9 @@ md5sum backup-2025-11-22-1017.tar.gz > backup-2025-11-22-1017.tar.gz.md5
 **Created a sample folder:** `myfiles`
 
 ```
-mkdir -p /mnt/c/Users/lenovo/OneDrive/Documents/myfiles
-echo "This is my first file" > /mnt/c/Users/lenovo/OneDrive/Documents/myfiles/test1.txt
-echo "This is my backup automation task" > /mnt/c/Users/lenovo/OneDrive/Documents/myfiles/test2.txt
+mkdir myfiles
+echo "This is my first file" > myfiles/test1.txt
+echo "This is my backup automation task" > myfiles/test2.txt
 ```
 
 
