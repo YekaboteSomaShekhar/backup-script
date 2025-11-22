@@ -164,4 +164,5 @@ This Automated Backup System provides a practical and extensible way to secure f
 - Data safety via verified backups
 - Space optimization via rotation
 - Ease of use with configuration and logging
+
 It’s a great foundation for learning real-world shell scripting and automation practices.
