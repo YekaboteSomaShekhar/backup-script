@@ -97,7 +97,7 @@ md5sum backup-2025-11-22-1017.tar.gz > backup-2025-11-22-1017.tar.gz.md5
 
 #### 1. Windows path compatibility
 - Fixed by using `/mnt/c/Users...` format instead of `C:\...`
-#### Automating deletion logic
+#### 2. Automating deletion logic
 - Implemented a basic rotation system that keeps only the latest backups.
 
 ### How They Were Solved
@@ -105,6 +105,19 @@ md5sum backup-2025-11-22-1017.tar.gz > backup-2025-11-22-1017.tar.gz.md5
 - Used Linux-standard utilities like `tar`, `md5sum`, and `find`.
 - Added logging and error handling for all critical operations.
 - Tested each step independently before combining functions.
+
+### Testing
+### How the Script Was Tested
+
+**Created a sample folder:** `myfiles`
+
+```
+mkdir -p /mnt/c/Users/lenovo/OneDrive/Documents/myfiles
+echo "This is my first file" > /mnt/c/Users/lenovo/OneDrive/Documents/myfiles/test1.txt
+echo "This is my backup automation task" > /mnt/c/Users/lenovo/OneDrive/Documents/myfiles/test2.txt
+```
+
+
 
 
 
