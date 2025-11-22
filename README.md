@@ -86,14 +86,14 @@ md5sum backup-2025-11-22-1017.tar.gz > backup-2025-11-22-1017.tar.gz.md5
 ```
 
 ### Design Decisions
-### Why this approach?
+#### Why this approach?
 
 - **Modular functions:** Code is broken into logical functions like create_backup, verify_backup, and delete_old_backups.
 - **Configuration-based:** Users can customize behavior using backup.config instead of editing the script.
 - **Cross-platform:** Works on Linux and WSL (Windows Subsystem for Linux).
 - **Lock file mechanism:** Prevents accidental multiple runs that could corrupt backups.
 
-### Challenges Faced
+#### Challenges Faced
 
 **1. Windows path compatibility**
 - Fixed by using `/mnt/c/Users...` format instead of `C:\...`
@@ -101,7 +101,7 @@ md5sum backup-2025-11-22-1017.tar.gz > backup-2025-11-22-1017.tar.gz.md5
 **2. Automating deletion logic**
 - Implemented a basic rotation system that keeps only the latest backups.
 
-### How They Were Solved?
+#### How They Were Solved?
 
 - Used Linux-standard utilities like `tar`, `md5sum`, and `find`.
 - Added logging and error handling for all critical operations.
