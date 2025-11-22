@@ -10,19 +10,25 @@ The **Automatic Backup System** is a Bash script designed to create automatic ba
 + It’s ideal for personal systems, small businesses, or developers who need regular backups of project directories or configuration files.
 
 ### How to Use It?
-#### Installation Steps
-1. **Clone or create the project folder:**
+#### Installation Steps:
+1. **Install Windows Subsystem for Linux(WSL) if you’re using Windows:**
+
+```
+wsl --install
+```
+
+3. **Clone or create the project folder:**
 
 ```
 mkdir backup system
 ```
-2. **Add the files:**
+3. **Add the files:**
    
 + `backup.sh` → main script
 + `backup.config` → configuration file
 + `README.md` → documentation
 
-3. **Make the script executable:**
+4. **Make the script executable:**
 
 ```
 chmod +x backup.sh
