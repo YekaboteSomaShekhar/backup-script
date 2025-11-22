@@ -22,6 +22,13 @@ mkdir backup system
 + `backup.config` → configuration file
 + `README.md` → documentation
 
+3. **Make the script executable:**
+
+```
+chmod +x backup.sh
+./backup.sh
+```
+
 ### Objectives
 - Automate the file backup process using Bash scripting.  
 - Organize backups by date and time.  
