@@ -65,7 +65,15 @@ Each backup file has a unique MD5 checksum created immediately after the backup:
 ```
 md5sum backup-2025-11-22-1017.tar.gz > backup-2025-11-22-1017.tar.gz.md5
 ```
+### Folder Structure for Backups
 
+```
+/mnt/c/Users/lenovo/OneDrive/Documents/backups/
+│
+├── backup-2025-11-20-1017.tar.gz
+├── backup-2025-11-21-1017.tar.gz.md5
+└── backup.log
+```
 
 ### Features
 1. Automatically copies files from the source folder to the backup folder.  
