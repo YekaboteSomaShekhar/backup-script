@@ -59,6 +59,14 @@ The script keeps your backup folder clean by deleting older backups automaticall
 - **Weekly**: Keeps the last 4 weekly backups.
 - **Monthly**: Keeps the last 3 monthly backups.
 
+### Checksum Verification
+Each backup file has a unique MD5 checksum created immediately after the backup:
+
+```
+md5sum backup-2025-11-22-1017.tar.gz > backup-2025-11-22-1017.tar.gz.md5
+```
+
+
 ### Features
 1. Automatically copies files from the source folder to the backup folder.  
 2. Creates a new folder for each backup with a timestamp.  
