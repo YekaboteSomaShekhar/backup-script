@@ -96,6 +96,7 @@ md5sum backup-2025-11-22-1017.tar.gz > backup-2025-11-22-1017.tar.gz.md5
 
 **1. Windows path compatibility**
 - Fixed by using `/mnt/c/Users...` format instead of `C:\...`
+
 **2. Automating deletion logic**
 - Implemented a basic rotation system that keeps only the latest backups.
 
