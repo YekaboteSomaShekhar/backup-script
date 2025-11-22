@@ -117,7 +117,39 @@ echo "This is my first file" > myfiles/test1.txt
 echo "This is my backup automation task" > myfiles/test2.txt
 ```
 
+**Run a backup file:**
 
+```
+./backup.sh /mnt/c/Users/lenovo/OneDrive/Documents/myfiles
+```
+
+**Dry-run test:**
+
+```
+./backup.sh --dry-run /mnt/c/Users/lenovo/OneDrive/Documents/myfiles
+```
+
+**Error Handling:**
+```
+./backup.sh /mnt/c/Users/lenovo/OneDrive/Documents/myflies
+```
+**Output**
+```
+[ERROR]: Source folder not found: /mnt/c/Users/lenovo/OneDrive/Documents/myflies
+```
+
+**Output (from backup.log):**
+
+```
+[2025-11-22 10:09:22] INFO: Starting backup of /mnt/c/Users/lenovo/OneDrive/Documents/myfiles
+[2025-11-22 10:09:22] SUCCESS: Backup created and verified: /mnt/c/Users/lenovo/OneDrive/Documents/backups/backup-2025-11-22-1009.tar.gz
+```
+### Limitations
+
+- Rotation	Currently supports daily cleanup; weekly/monthly cleanup to be added.
+- Restore	was not yet implemented.
+- Incremental backups	Only full backups are supported.
+- Email notifications	Not active (simulation possible via log or text output).
 
 
 
