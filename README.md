@@ -69,6 +69,7 @@ The script keeps your backup folder clean by deleting older backups automaticall
 - **Monthly**: Keeps the last 3 monthly backups.
 
 **Checksum Verification**
+
 Each backup file has a unique MD5 checksum created immediately after the backup:
 
 ```
