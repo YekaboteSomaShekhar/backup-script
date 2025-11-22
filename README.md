@@ -144,6 +144,12 @@ echo "This is my backup automation task" > myfiles/test2.txt
 [2025-11-22 10:09:22] INFO: Starting backup of /mnt/c/Users/lenovo/OneDrive/Documents/myfiles
 [2025-11-22 10:09:22] SUCCESS: Backup created and verified: /mnt/c/Users/lenovo/OneDrive/Documents/backups/backup-2025-11-22-1009.tar.gz
 ```
+**Restoring a Backup:**
+
+```
+./backup.sh --restore backup-2025-11-22-0810.tar.gz --to /mnt/c/Users/lenovo/OneDrive/Documents/restored_files
+```
+
 ### Limitations
 
 - Rotation	Currently supports daily cleanup; weekly/monthly cleanup to be added.
@@ -151,28 +157,10 @@ echo "This is my backup automation task" > myfiles/test2.txt
 - Incremental backups	Only full backups are supported.
 - Email notifications	Not active (simulation possible via log or text output).
 
+### Conclusion
 
-
-
-
-### Features
-1. Automatically copies files from the source folder to the backup folder.  
-2. Creates a new folder for each backup with a timestamp.  
-3. Logs every operation with success/failure status.  
-4. Deletes backups older than 7 days (optional cleanup).  
-5. Easy to customize and schedule with cron jobs.  
-
-### Technologies Used
-- **Bash (Shell Scripting)**
-- **Linux/Unix Command Line Tools:** `cp`, `mkdir`, `find`, `date`, `ls`, `wc`
-
-### Script Information
-**Script name:** `automatic_backup.sh`
-
-### Variables Used
-| Variable | Description |
-|-----------|-------------|
-| `SOURCE_DIR` | The folder containing files to back up |
-| `BACKUP_DIR` | The main backup folder where backups are stored |
-| `LOG_FILE` | The file where backup logs are saved |
-| `TIMESTAMP` | Stores the current date and time for naming backup folders |
+This Automated Backup System provides a practical and extensible way to secure files automatically using Bash. It ensures:
+- Data safety via verified backups
+- Space optimization via rotation
+- Ease of use with configuration and logging
+- It’s a great foundation for learning real-world shell scripting and automation practices.
