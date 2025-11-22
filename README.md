@@ -92,7 +92,7 @@ md5sum backup-2025-11-22-1017.tar.gz > backup-2025-11-22-1017.tar.gz.md5
 - **Cross-platform:** Works on Linux and WSL (Windows Subsystem for Linux).
 - **Lock file mechanism:** Prevents accidental multiple runs that could corrupt backups.
 
-#### Challenges Faced
+### Challenges Faced
 
 **1. Windows path compatibility**
 - Fixed by using `/mnt/c/Users...` format instead of `C:\...`
