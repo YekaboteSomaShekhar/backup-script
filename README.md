@@ -86,7 +86,7 @@ md5sum backup-2025-11-22-1017.tar.gz > backup-2025-11-22-1017.tar.gz.md5
 ```
 
 ### Design Decisions
-#### Why this approach?
+### Why this approach?
 
 - **Modular functions:** Code is broken into logical functions like create_backup, verify_backup, and delete_old_backups.
 - **Configuration-based:** Users can customize behavior using backup.config instead of editing the script.
