@@ -9,7 +9,7 @@ The **Automatic Backup System** is a Bash script designed to create automatic ba
 + It’s ideal for personal systems, small businesses, or developers who need regular backups of project directories or configuration files.
 
 ### How to Use It?
-#### Installation Steps:
+**Installation Steps:**
 1. **Install Windows Subsystem for Linux(WSL) if you’re using Windows:**
 - Go to cmd or windows powershell and type:
 
@@ -51,7 +51,7 @@ chmod +x backup.sh
 [2025-11-22 08:10:15] SUCCESS: Backup created and verified: backup-2025-11-22-0810.tar.gz
 ```
 
-### Command Options Explained
+**Command Options Explained**
 
 | Command                                   | Description                                         |
 | ----------------------------------------- | --------------------------------------------------- |
@@ -61,7 +61,6 @@ chmod +x backup.sh
 | (future) `--list`                         | Lists all backups with sizes and timestamps         |
 
 ### How It Works?
-
 **Backup Rotation Algorithm**
 
 The script keeps your backup folder clean by deleting older backups automatically:
@@ -69,13 +68,13 @@ The script keeps your backup folder clean by deleting older backups automaticall
 - **Weekly**: Keeps the last 4 weekly backups.
 - **Monthly**: Keeps the last 3 monthly backups.
 
-### Checksum Verification
+**Checksum Verification**
 Each backup file has a unique MD5 checksum created immediately after the backup:
 
 ```
 md5sum backup-2025-11-22-1017.tar.gz > backup-2025-11-22-1017.tar.gz.md5
 ```
-### Folder Structure for Backups
+**Folder Structure for Backups**
 
 ```
 /mnt/c/Users/lenovo/OneDrive/Documents/backups/
@@ -84,20 +83,20 @@ md5sum backup-2025-11-22-1017.tar.gz > backup-2025-11-22-1017.tar.gz.md5
 ├── backup-2025-11-21-1017.tar.gz.md5
 └── backup.log
 ```
-### Design Decisions
 
-### Why this approach?
+### Design Decisions
+#### Why this approach?
 
 - **Modular functions:** Code is broken into logical functions like create_backup, verify_backup, and delete_old_backups.
 - **Configuration-based:** Users can customize behavior using backup.config instead of editing the script.
 - **Cross-platform:** Works on Linux and WSL (Windows Subsystem for Linux).
 - **Lock file mechanism:** Prevents accidental multiple runs that could corrupt backups.
 
-### Challenges Faced
+#### Challenges Faced
 
-#### 1. Windows path compatibility
+**1. Windows path compatibility**
 - Fixed by using `/mnt/c/Users...` format instead of `C:\...`
-#### 2. Automating deletion logic
+**2. Automating deletion logic**
 - Implemented a basic rotation system that keeps only the latest backups.
 
 ### How They Were Solved?
@@ -107,7 +106,7 @@ md5sum backup-2025-11-22-1017.tar.gz > backup-2025-11-22-1017.tar.gz.md5
 - Tested each step independently before combining functions.
 
 ### Testing
-### How the Script Was Tested?
+#### How the Script Was Tested?
 
 **Created a sample folder:** `myfiles`
 
