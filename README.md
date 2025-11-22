@@ -1,8 +1,7 @@
 ## Automatic Backup System (Bash Script)
 
 ### Project Overview
-The **Automatic Backup System** is a Bash script designed to create automatic backups of important files or directories.  
-It copies files from a **source directory** to a **backup directory**, stores them in timestamped folders, and maintains a log file for tracking all backup operations.
+The **Automatic Backup System** is a Bash script designed to create automatic backups of important files or directories. It copies files from a **source directory** to a **backup directory**, stores them in timestamped folders, and maintains a log file for tracking all backup operations.
 
 ### Objectives
 - Automate the file backup process using Bash scripting.  
