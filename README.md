@@ -50,6 +50,14 @@ chmod +x backup.sh
 [2025-11-22 08:10:12] INFO: Starting backup of /mnt/c/Users/lenovo/OneDrive/Documents/myfiles
 [2025-11-22 08:10:15] SUCCESS: Backup created and verified: backup-2025-11-22-0810.tar.gz
 ```
+### How It Works
+
+**Backup Rotation Algorithm**
+
+The script keeps your backup folder clean by deleting older backups automatically:
+- **Daily**: Keeps the last 7 daily backups.
+- **Weekly**: Keeps the last 4 weekly backups.
+- **Monthly**: Keeps the last 3 monthly backups.
 
 ### Features
 1. Automatically copies files from the source folder to the backup folder.  
