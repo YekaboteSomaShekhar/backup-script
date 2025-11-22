@@ -3,8 +3,7 @@
 ### Project Overview
 The **Automatic Backup System** is a Bash script designed to create automatic backups of important files or directories. It compresses a specified folder into a timestamped `.tar.gz` archive, generates a checksum for verification, logs every operation, and automatically removes old backups based on rotation rules (daily, weekly, monthly).
 
-### Why is it useful?
- 
+#### Why is it useful?
 + Manual backups are error-prone and time-consuming.
 + This script provides a reliable, repeatable, and space-efficient solution for managing backups — ensuring important data is always protected without human intervention.
 + It’s ideal for personal systems, small businesses, or developers who need regular backups of project directories or configuration files.
@@ -18,13 +17,13 @@ The **Automatic Backup System** is a Bash script designed to create automatic ba
 wsl --install
 ```
 
-3. **Clone or create the project folder:**
+2. **Clone or create the project folder:**
 
 ```
 mkdir backup system
 ```
+
 3. **Add the files:**
-   
 + `backup.sh` → main script
 + `backup.config` → configuration file
 + `backup.log`→ log file
@@ -61,7 +60,7 @@ chmod +x backup.sh
 | (future) `--restore <file> --to <folder>` | Restores a backup (if implemented)                  |
 | (future) `--list`                         | Lists all backups with sizes and timestamps         |
 
-### How It Works
+### How It Works?
 
 **Backup Rotation Algorithm**
 
@@ -101,14 +100,14 @@ md5sum backup-2025-11-22-1017.tar.gz > backup-2025-11-22-1017.tar.gz.md5
 #### 2. Automating deletion logic
 - Implemented a basic rotation system that keeps only the latest backups.
 
-### How They Were Solved
+### How They Were Solved?
 
 - Used Linux-standard utilities like `tar`, `md5sum`, and `find`.
 - Added logging and error handling for all critical operations.
 - Tested each step independently before combining functions.
 
 ### Testing
-### How the Script Was Tested
+### How the Script Was Tested?
 
 **Created a sample folder:** `myfiles`
 
